@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#16295E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ACD">
+<title>ACD | AirCrewDepot</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body data-slug="acd" data-salt="SB6Ta3K964S+IvrxQjXLBg==" data-iter="310000">
+<div id="lock" class="lock" hidden>
+  <form id="lockForm" class="lock-card" autocomplete="on">
+    <div class="lock-mark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <style>
+    .mark { fill: none; stroke: #2145A0; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+    @media (prefers-color-scheme: dark) { .mark { stroke: #7093F2; } }
+  </style>
+  <g class="mark">
+    <circle cx="12" cy="12" r="10.6" />
+    <path d="M12 5.4c.62 0 .95.66.95 1.56v2.56l5.28 3.08v1.28l-5.28-1.64v2.96l1.56 1.12v1.04l-2.51-.68-2.51.68v-1.04l1.56-1.12v-2.96L5.77 13.88V12.6l5.28-3.08V6.96c0-.9.33-1.56.95-1.56z" />
+  </g>
+</svg>
+</div>
+    <h1 class="wm">AirCrewDepot</h1>
+    <p class="lock-sub">מצגת פרטית. צריך סיסמה כדי להיכנס.</p>
+    <input type="text" name="username" value="acd" autocomplete="username" hidden>
+    <label class="lock-field"><span>סיסמה</span>
+      <input id="pw" type="password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" required></label>
+    <label class="lock-remember"><input id="remember" type="checkbox" checked> לזכור במכשיר הזה</label>
+    <button type="submit" id="unlockBtn">כניסה</button>
+    <p id="lockErr" class="lock-err" role="alert" hidden>הסיסמה לא נכונה. נסו שוב.</p>
+  </form>
+</div>
+<div id="boot" class="boot"><div class="spinner" aria-label="טוען"></div></div>
+<div id="app" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
